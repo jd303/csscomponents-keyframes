@@ -26,7 +26,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// SLIDE UP
-@include keyframes(slideup) {
+@include csscomponents-keyframes(slideup) {
 	0% {
 		opacity:0;
 		@include csscomponents-keyframes-transform(translateY(60px));
@@ -39,7 +39,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// SCALE UP
-@include keyframes(scaleup) {
+@include csscomponents-keyframes(scaleup) {
 	0%   	{
 		opacity:0;
 		@include csscomponents-keyframes-transform(translateY(60px) scale(0.9));
@@ -53,7 +53,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// FADE
-@include keyframes(fade) {
+@include csscomponents-keyframes(fade) {
 	0%   	{ opacity:0; }
 	100% 	{ opacity:1; }
 }
@@ -61,7 +61,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// BOUNCE
-@include keyframes(bounce)
+@include csscomponents-keyframes(bounce)
 {
 	0%, 20%, 53%, 80%, 100% {
 		@include csscomponents-keyframes-prefixProperty(animation-timing-function, cubic-bezier(0.215, 0.610, 0.355, 1.000));
@@ -86,7 +86,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// FLASH (aaahh-aaaaahhh)
-@include keyframes(flash)
+@include csscomponents-keyframes(flash)
 {
 	0%, 50%, 100% {
 		opacity: 1;
@@ -100,7 +100,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// PULSE
-@include keyframes(pulse)
+@include csscomponents-keyframes(pulse)
 {
 	0%		{ @include csscomponents-keyframes-prefixProperty(transform, scale3d(1, 1, 1)); }
 	50%		{ @include csscomponents-keyframes-prefixProperty(transform, scale3d(1.05, 1.05, 1.05)); } 
@@ -111,7 +111,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// RUBBER BAND
-@include keyframes(rubberBand)
+@include csscomponents-keyframes(rubberBand)
 {
 	0%	{ 	@include csscomponents-keyframes-prefixProperty(transform, scale3d(1, 1, 1)); }
 	30% {	@include csscomponents-keyframes-prefixProperty(transform, scale3d(1.25, 0.75, 1)); }
@@ -125,7 +125,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// SHAKE
-@include keyframes(shake)
+@include csscomponents-keyframes(shake)
 {
 	0%, 100% {
 		@include csscomponents-keyframes-prefixProperty(transform, translate3d(0, 0, 0)); }
@@ -140,7 +140,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// SEESAW
-@include keyframes(seesaw)
+@include csscomponents-keyframes(seesaw)
 {
 	20% { @include csscomponents-keyframes-prefixProperty(transform, rotate3d(0, 0, 1, 15deg)); }
 	40% { @include csscomponents-keyframes-prefixProperty(transform, rotate3d(0, 0, 1, -10deg)); }
@@ -152,7 +152,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// TADA
-@include keyframes(tada)
+@include csscomponents-keyframes(tada)
 {
 	0% {
 		@include csscomponents-keyframes-prefixProperty(transform, scale3d(1, 1, 1)); }
@@ -173,7 +173,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// WOBBLE
-@include keyframes(wobble)
+@include csscomponents-keyframes(wobble)
 {
 	0%	{ @include csscomponents-keyframes-prefixProperty(transform, none); }
 	15% { @include csscomponents-keyframes-prefixProperty(transform, translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)); }
@@ -187,7 +187,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// JELLY
-@include keyframes(jelly)
+@include csscomponents-keyframes(jelly)
 {
 	11.1% {	@include csscomponents-keyframes-prefixProperty(transform, none); }
 	22.2% { @include csscomponents-keyframes-prefixProperty(transform, skewX(-12.5deg) skewY(-12.5deg)); }
@@ -203,7 +203,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// BOUNCE IN (Best played forward)
-@include keyframes(bouncein)
+@include csscomponents-keyframes(bouncein)
 {
 	0%, 20%, 40%, 60%, 80%, 100% {
 		@include csscomponents-keyframes-prefixProperty(animation-timing-function, cubic-bezier(0.215, 0.610, 0.355, 1.000)); }
@@ -233,7 +233,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// BOUNCE OUT (Best played forward)
-@include keyframes(bounceout)
+@include csscomponents-keyframes(bounceout)
 {
 	20% {
 		@include csscomponents-keyframes-prefixProperty(transform, scale3d(.9, .9, .9)); }
@@ -251,7 +251,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// FLIP IN X
-@include keyframes(flipinx) {
+@include csscomponents-keyframes(flipinx) {
 	0% {
 		opacity:0;
 		@include csscomponents-keyframes-prefixProperty(transform, perspective(400px) rotate3d(1, 0, 0, 90deg));
@@ -280,7 +280,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// FLIP IN Y
-@include keyframes(flipiny) {
+@include csscomponents-keyframes(flipiny) {
 	0% {
 		opacity:0;
 		@include csscomponents-keyframes-prefixProperty(transform, perspective(400px) rotate3d(0, 1, 0, 90deg));
@@ -309,7 +309,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /////////// HINGE
-@include keyframes(hinge) {
+@include csscomponents-keyframes(hinge) {
 	0% {
 		@include csscomponents-keyframes-prefixProperty(transform-origin, top left);
 		@include csscomponents-keyframes-prefixProperty(animation-timing-function, ease-in-out);
